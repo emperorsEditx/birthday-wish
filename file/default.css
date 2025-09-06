@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: white;
+  overflow: auto;
+}
+
+a {
+  color: white;
+  font-size: 14px;
+}
+
+#main {
+  width: 100%;
+}
+
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1100px;
+  height: 62vw;
+  max-height: 680px;
+  min-height: 350px;
+  margin-top: 10px;
+}
+
+#text {
+  width: 25vw;
+  min-width: 180px;
+  max-width: 272px;
+  height: 50vw;
+  min-height: 200px;
+  max-height: 560px;
+  left: 17vw;
+  top: 7vw;
+  position: absolute;
+}
+
+#code {
+  display: none;
+  color: rgb(196, 255, 255);
+  font-size: 1.2rem;
+  margin-top: 5vw;
+  line-height: 2rem;
+  font-weight: bolder;
+  font-weight: bolder;
+}
+
+#clock-box {
+  position: absolute;
+  left: 5vw;
+  top: 50vw;
+  font-size: 2rem;
+  display: none;
+}
+
+#clock-box a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+#clock {
+  margin-left: 4vw;
+}
+
+#clock .digit {
+  font-size: 4rem;
+}
+
+#canvas {
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1100px;
+  height: 62vw;
+  max-height: 680px;
+  min-height: 200px;
+}
+
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5vw;
+  display: none;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.say {
+  margin-left: 0.5vw;
+}
+
+.space {
+  margin-right: 10vw;
+}
+
+#message-box {
+  position: absolute;
+  margin-top: 40vw;
+  font-size: 2rem;
+
+  /* Responsive adjustments for tablets and phones */
+  @media (max-width: 900px) {
+    #wrap {
+      width: 98vw;
+      height: 70vw;
+      min-height: 250px;
+    }
+
+    #text {
+      left: 5vw;
+      top: 5vw;
+      width: 40vw;
+      height: 60vw;
+    }
+
+    #canvas {
+      width: 98vw;
+      height: 70vw;
+      min-height: 150px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 0.9rem;
+    }
+
+    #wrap {
+      width: 100vw;
+      height: 90vw;
+      min-height: 120px;
+    }
+
+    #text {
+      left: 2vw;
+      top: 2vw;
+      width: 80vw;
+      height: 60vw;
+      min-width: 120px;
+    }
+
+    #code {
+      font-size: 1rem;
+      margin-top: 2vw;
+      line-height: 1.2rem;
+    }
+
+    #canvas {
+      width: 100vw;
+      height: 60vw;
+      min-height: 80px;
+    }
+
+    #clock-box {
+      left: 2vw;
+      top: 55vw;
+      font-size: 1.2rem;
+    }
+
+    #clock-box a {
+      font-size: 1.2rem;
+    }
+
+    #message-box {
+      margin-top: 55vw;
+      font-size: 1rem;
+    }
+  }
+
+  font-family: monospace;
+
+}
